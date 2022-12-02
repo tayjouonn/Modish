@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import url(style_nav.css);
+
+div#Items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.productHeader{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.productHeader img {
+    width: 100%;
+}
+
+.sellingfast, .recommended {
+    text-align:center;
+    padding: 3px 10px;
+    font-size: 15px;
+    font-weight: 750;
+    position: inherit; 
+    top: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: .15em;
+}
+.sellingfast {
+    color: #fff;
+    background: rgb(185, 43, 43);
+}
+
+.recommended {
+    color: black;
+    background: rgb(255, 212, 40);
+}
+
+  
+#circle1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(140, 201, 213);
+  clip-path: circle(700px at right 1150px);
+  z-index: -1;
+}
+
+#circle2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(97, 141, 150, 0.4);
+  clip-path: circle(700px at right 1200px);
+  z-index: -1;
+}
+  
+.item {
+  display: flex;
+  height: 60vh;
+  width: 85%;
+  max-width: 90%;
+  margin: 100px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 24px 42px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 24px 42px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 24px 42px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+
+    
+.itemBox {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 7px 10px 7px;
+  margin-top: 30px;
+}
+    
+.descriptions {
+    height: 100%;
+    width: 100%;
+}
+    
+.descriptions h1 {
+    margin: 0 0 0 38px;
+    padding-top: 22px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 34px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: #3A3B3C;
+}
+    
+.descriptions h2 {
+    margin: 0 0 15px 38px;
+    font-size: 13px;
+    font-family: 'Lucida Bright', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #838996;
+    letter-spacing: 0.2em;
+}
+
+.descriptions .marquee {
+    margin-left: 10%;
+    width: 85%;
+    height: 55%;
+}
+
+.descriptions .marquee p {
+    font-family: 'Noto Sans JP';
+    height: 100%;
+    line-height: 30px;
+    text-align: left;
+}
+  
+.item > div {
+    width: 100%;
+}
+
+
+td{
+    border: black solid 5px;
+    border-radius: 10px;
+}
+
+

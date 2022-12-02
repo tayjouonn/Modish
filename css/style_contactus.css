@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@import url(style_nav.css);
+
+#circle1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(140, 201, 213);
+  clip-path: circle(500px at right 600px);
+  z-index: -1;
+}
+
+#circle2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(19, 107, 124, .7);
+  clip-path: circle(700px at right 1000px);
+  z-index: -1;
+}
+
+.contact{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+article{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 8%;
+  padding-bottom: 5%;
+}
+
+.contactus {
+  border-radius: 5pt;
+  width: 45%;
+}
+
+.contact > div > img{
+  width:10%;
+  height:auto;
+  margin-right: 5%;
+  }
+
+.contact > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-block: 1%;
+  }
+
+.contact > div > p {
+    height: 100%;
+    width: 70%;
+    font-family:'Barlow Semi Condensed', 'sans-serif';
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+  }
+
+.contactName {
+    text-decoration: none;
+    color: #124d6b;
+    margin-top: 3em;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: 0.35s;
+    }
+
+.contactName:hover {
+  font-size: 1.4em;
+  color: black;
+}
+
+span.time {
+  width: 100%;
+  margin-top: 3%;
+  border-style: dotted;
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.time > p {
+  text-align: center;
+  width: 100%;
+  padding: 3% 0;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.4em;
+}
+
+.time b {
+  font-family: 'Butler Stencil';
+  letter-spacing: .2em;
+  font-size: .8em;
+}
+
+@media only screen and (max-width: 1200px) {
+  article {
+    flex-direction: column;
+  }
+  .contactus {
+    width: 55%;
+  }
+  .contact, .time {
+    padding-top: 2%;
+    width: 65%;
+  }
+}
+
+
+
+
+.button-54 {
+  font-family: 'Barlow Semi Condensed', 'sans-serif';
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}

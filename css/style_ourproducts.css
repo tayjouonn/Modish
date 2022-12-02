@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url(style_nav.css);
+
+
+body {
+    overflow: hidden;
+}
+
+#circle1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(140, 201, 213);
+    clip-path: circle(600px at left 750px);
+    z-index: -1;
+}
+
+#circle2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(97, 141, 150, 0.4);
+    clip-path: circle(600px at left 820px);
+    z-index: -1;
+}
+
+.sideImage > img {
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+}
+
+section.products {
+    margin-top: 100px;
+    width: 45%;
+    height: 90vh;
+    float: right;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products div {
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products a {
+    width: 23vh;
+    height: 23vh;
+    text-decoration: none;
+    font-size: 1.7em;
+    font-family: 'Righteous', sans-serif;
+    color: black;
+    background-color: rgba(255, 255, 255, .4);
+    border: solid 5px  rgb(140, 201, 213);
+    border-radius: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .12s;
+    z-index: 2;
+}
+
+.products a:hover {
+    letter-spacing: .2em;
+    padding: 2%;
+    box-shadow: 0 10px 20px -10px rgba(97, 141, 150, 0.6);
+}
+
+.products a.hardware:hover {
+    letter-spacing: .1em;
+}
+
+.productImg {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+article h1{
+    text-align: center;
+    font-family: 'Righteous', 'sans-serif';
+    font-size: 3.0em;
+    letter-spacing: 0.1em;
+    margin-top:0.5em;
+}
+
+footer {
+    bottom: 0;
+}

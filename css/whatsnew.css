@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+@import url(style_nav.css);
+
+* {
+  box-sizing: border-box;
+}
+
+/*   ANIMATION TEXT ABOVE NAV  */
+
+h1{
+  width: 100%;
+  padding: 1% 0;
+  font-family:'Rozha One';
+  display:block;
+  background-color:rgb(133, 204, 204);
+  text-align:center;
+  font-size: 1.6em;
+  letter-spacing: .3em;
+  color: black;
+}
+
+
+h1:before{
+  content: '';
+  animation-name: head;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+/*   LIST DESIGN  */
+.productSpecs  > li {
+  list-style-type:disc
+}
+
+/*   HEADER IMAGE  */
+
+#whatsNew > a {
+  margin: 3% 0;
+  width: 100%;
+}
+
+.newHeader{
+  width: 100%;
+  }
+  
+  /*  PRODUCTS  */
+
+#whatsNew {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 4%;
+  margin-top: 10vh;
+}
+
+.item {
+  width: 35%;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 3%;
+  border-radius: 8pt;
+  overflow: hidden;
+  box-shadow: 0 0 25px -5px rgba(0, 0, 0, .3);
+  background-color: rgba(255, 255, 255, .8);
+}
+
+div.bottom {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productImg {
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+
+.product {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product > div {
+  width: 100%;
+  height: 32%;
+}
+
+.recommended {
+  text-align:center;
+  padding: 3px 10px;
+  font-size: 15px;
+  font-weight: 750;
+  position: inherit; 
+  top: 20px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  letter-spacing: .15em;
+  background: rgb(255, 212, 40);
+}
+
+/*   PRODUCT'S NAME  */
+
+.productName {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.3em;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productName b {
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+
+.productSpecs, .productName {
+  margin: auto;
+  margin-top: 3%;
+  width: 90%;
+}
+
+
+/*   NEW CARD  */
+.new {
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  padding: 1%;
+  color: #fff;
+  background: #db3f2b;
+  border-radius: 20%;
+}
+
+
+/*   PRODUCT'S DESCRIPTION  */
+.productSpecs {
+  font-family: 'Josefin Sans';
+  line-height: 1.5;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*   PRODUCT'S DESCRIPTION WITH RATINGS ICON  */
+.productSpecs1 {
+  font-family: 'Josefin Sans';
+  line-height: 1.5;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/*   PRICE   */
+.price {
+  display: inline-block;
+  font-family:'Britannic Medium';
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+
+}
+
+span{
+  font:'DM Serif Text';
+}
+ 
+/*   ADD TO CART BUTTON */
+ button {
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'DM Serif Text', sans-serif; /* -- */
+  font-size: 14px;
+  font-weight: 795;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: rgb(54, 44, 44);
+  cursor: pointer;
+  outline: none;
+  transition: .2s;
+}
+  
+ button:hover {
+  background-color: rgb(255, 204, 0);
+  color: black;
+}
+  
+button[type=button] {
+  float: left;
+
+}
+
+#circle1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(140, 201, 213);
+  clip-path: circle(600px at right 900px);
+  z-index: -1;
+  opacity: .4;
+}
+
+#circle2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(97, 141, 150, 0.4);
+  clip-path: circle(650px at right 1000px);
+  z-index: -1;
+  opacity: .4;
+}
+
+
+/*   H1 ANIMATION */
+
+@keyframes head {
+  0%, 24% {content:'NEW PRODUCTS HAVE LAUNCHED!'}
+  25%, 49% {content: "25% OFF EVERYTHING"}
+  50%, 74% {content: "DON'T MISS OUT!"}
+  75%, 100% {content: "GET YOURS NOW!"}
+}
+

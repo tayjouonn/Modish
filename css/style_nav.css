@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+footer > address {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    font-family: 'Righteous', 'sans-serif';
+    font-size: 0.8em;
+    padding: 0.55%;
+    text-align:center;
+    letter-spacing: 0.3em;
+}
+
+/*      NAV     */
+
+#logo {
+    width: 180px;
+    height: auto;
+
+   
+}
+#design {
+    position: fixed;
+    width: 30vh;
+    height: 55vh;
+    background-color: rgba(140, 201, 213, 0.15);
+    transform: rotate(55deg);
+    top: -25vh;
+    left: -3%;
+    z-index: -1;
+}
+
+li {
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Righteous', 'sans-serif';
+    transition: ease-in 0.15s;
+    font-size: 20px;
+}
+li a:hover {
+    color: rgb(33, 123, 141);
+    font-size: 2.04em;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: solid 1.5px;
+    background-color: white;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/*      FONTS       */
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url('../fonts/ArchitectsDaughter-Regular.ttf');
+}
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    src: url('../fonts/BarlowSemiCondensed-Bold.ttf');
+}
+@font-face {
+    font-family: 'Bentham';
+    src: url('../fonts/Bentham-Regular.ttf');
+}
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('../fonts/Butler_Medium_Stencil.otf');
+}
+@font-face {
+    font-family: 'DM Serif Text';
+    src: url('../fonts/DMSerifText-Regular.ttf');
+}
+@font-face {
+    font-family: 'Glory';
+    src: url('../fonts/Glory-Light.ttf');
+}
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('../fonts/KaushanScript-Regular.ttf');
+}
+@font-face {
+    font-family: 'Mogena';
+    src: url('../fonts/Mogena.ttf');
+}
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url('../fonts/NotoSansJP-Light.otf');
+}
+@font-face {
+    font-family: 'Righteous';
+    src: url('../fonts/Righteous-Regular.ttf');
+}
+@font-face {
+    font-family: 'Rozha One';
+    src: url('../fonts/RozhaOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'X Bambi';
+    src: url('../fonts/X_BAMBI.TTF');
+}
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url('../fonts/YanoneKaffeesatz-Light.ttf');
+}

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+@import url(style_nav.css);
+
+#circle1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(140, 201, 213);
+  clip-path: circle(500px at right 600px);
+  z-index: -1;
+  opacity: .5;
+}
+
+#circle2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(19, 107, 124, .7);
+  clip-path: circle(700px at right 1000px);
+  z-index: -1;
+  opacity: .6;
+}
+  
+  /*div1 style*/
+a#introduce {
+  border-top: solid 2px;
+  width: 100%;
+  margin-top: 4%;
+}
+
+  .div1 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    padding: 0 2.5% 7% 2.5%;
+  
+  }
+
+
+  .aboutimg {
+    margin-top: 8%;
+  }
+  
+  .abouttext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  
+  .abouttext h1,
+  .aboutprice-btn p {
+    font-family: 'Bentham', serif;
+  }
+  
+  .abouttext h2 {
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    letter-spacing: 0.2em;
+  }
+  
+  .abouttext p, .abouttext2 p {
+    font-family: 'Noto Sans JP', serif;
+    letter-spacing: .12em;
+    line-height: 1.7em;
+    font-size: 1.1em;
+    font-weight: lighter;
+    overflow: hidden;
+  }
+  
+  span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+  }
+
+  #purposeInfo {
+    border-top: solid 2px;
+    margin-top: 4%;
+  }
+
+  .div2 {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border: 1px solid black;
+      margin-bottom:  100px; 
+    }
+
+    .div2 img {
+      width: 16%;
+      margin: 1.2%;
+      margin-right: 3%;
+    }
+    
+    .abouttext2 h4 {
+      font-size: 34px;
+      color: #474747;
+    }
+    
+    .abouttext2 h4 {
+      font-family: 'Bentham', serif;
+    }
+    
+     h2 {
+      font-size: 13px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+ #leadership {
+   margin-top: 4%;
+   border-top: solid 2px;
+ }
+
+ #leadership > div[class^='aboutinfo'] {
+ 
+   border: solid 1px;
+ }
+
+ .divstyle1 {
+  width: 100%;
+  padding: 0px 200px 0px 200px;
+  margin: 10px;
+}
+
+.aboutinfo3 {
+  border: solid 2px;
+  width: 100%;
+  margin-top: 4%;
+  margin-bottom: 10%;
+
+}
+
+.aboutinfo3 > .abouttext > div {
+  height: 100%;
+  width: 45%;
+  margin: 30px 10px 60px 10px;
+  border: dotted 3px;
+}
+
+.aboutinfo3 > .abouttext {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+  
+  /*div3 style*/  
+
+  
+.para2 {
+  float: right;
+}
+
+h1 {
+  margin-top: 2%;
+  text-align: center;
+}
+
+a#lead > h1, a#purpose > h1, a#achieve > h1, a#introduce > h1, h1#modish {
+  margin: 3% 0 2% 0;
+  text-transform: uppercase;
+  font-family: 'Righteous', sans-serif;
+  letter-spacing: .35em;
+}
+ 
+.h4awards {
+  text-align: center;
+}
+
+
